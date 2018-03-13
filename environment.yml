@@ -15,8 +15,6 @@ dependencies:
 # pep8
   - flake8
   - pycodestyle
-# ipython
-  - ipython
 # sphinx
   - sphinx
   - sphinx_rtd_theme
