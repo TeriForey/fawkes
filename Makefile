@@ -14,7 +14,7 @@ CPU_ARCH := $(shell uname -m 2>/dev/null || uname -p 2>/dev/null || echo "unknow
 
 # Python
 SETUPTOOLS_VERSION := 36.5.0
-CONDA_VERSION := 4.4
+CONDA_VERSION := 4.3
 BUILDOUT_VERSION := 2.10.0
 
 # Anaconda
@@ -96,7 +96,7 @@ info:
 	@echo "  APP_NAME            $(APP_NAME)"
 	@echo "  APP_ROOT            $(APP_ROOT)"
 	@echo "  DOWNLOAD_CACHE      $(DOWNLOAD_CACHE)"
-	
+
 ## Helper targets ... ensure that Makefile etc are in place
 
 .PHONY: backup
