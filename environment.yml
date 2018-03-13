@@ -19,9 +19,9 @@ dependencies:
   - sphinx
   - doc8
 # phoenix
-  - nginx=1.10.3
-  - supervisor=3.3.1
-  - gunicorn=19.7
+  - nginx=1.10
+  - supervisor=3
+  - gunicorn=19
   - requests-oauthlib
   - gevent=1.2
   - lxml=3.7
@@ -45,6 +45,7 @@ dependencies:
   - mongodb=3.4
 # twitcher
   - webob=1.6.1
+  - argcomplete
 # phoenix extensions
 #  - python-swiftclient=2.4.0
   - threddsclient=0.3.4
