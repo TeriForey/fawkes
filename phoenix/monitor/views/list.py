@@ -97,7 +97,7 @@ class JobList(MyView):
         except ValidationFailure, e:
             LOGGER.exception("Validation of caption failed.")
             self.session.flash("Validation of caption failed.", queue='danger')
-        except Exception, e:
+        except Exception:
             LOGGER.exception("Edit caption failed.")
             self.session.flash("Edit caption failed.", queue='danger')
         else:
@@ -121,7 +121,7 @@ class JobList(MyView):
         except ValidationFailure, e:
             LOGGER.exception("Validation of labels failed.")
             self.session.flash("Validation of labels failed.", queue='danger')
-        except Exception, e:
+        except Exception:
             LOGGER.exception("Edit labels failed.")
             self.session.flash("Edit labels failed.", queue='danger')
         else:
