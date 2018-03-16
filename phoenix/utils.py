@@ -59,7 +59,7 @@ def pinned_processes(request):
                 # TODO: need to fix owslib to handle special identifiers
                 process = wps.describeprocess(identifier)
                 description = headline(process.abstract)
-            except Exception, err:
+            except Exception:
                 LOGGER.warn("could not add pinned process %s", pinned)
             else:
                 processes.append(dict(
