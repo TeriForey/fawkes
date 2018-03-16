@@ -94,7 +94,7 @@ class JobList(MyView):
             appstruct = form.validate(controls)
             self.collection.update_one({'identifier': appstruct['identifier']},
                                        {'$set': {'caption': appstruct['caption']}})
-        except ValidationFailure, e:
+        except ValidationFailure:
             LOGGER.exception("Validation of caption failed.")
             self.session.flash("Validation of caption failed.", queue='danger')
         except Exception:
@@ -118,7 +118,7 @@ class JobList(MyView):
             appstruct = form.validate(controls)
             tags = make_tags(appstruct['labels'])
             self.collection.update_one({'identifier': appstruct['identifier']}, {'$set': {'tags': tags}})
-        except ValidationFailure, e:
+        except ValidationFailure:
             LOGGER.exception("Validation of labels failed.")
             self.session.flash("Validation of labels failed.", queue='danger')
         except Exception:
