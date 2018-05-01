@@ -22,7 +22,7 @@ class ProcessList(MyView):
             item = dict(
                 title="{0.title} {0.processVersion}".format(process),
                 description=getattr(process, 'abstract', ''),
-                url=self.request.route_path('processes_execute',
+                url=self.request.route_path('namewps_execute',
                                             _query=[('wps', self.service_name), ('process', process.identifier)]))
             items.append(item)
         return dict(

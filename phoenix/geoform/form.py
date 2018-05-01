@@ -31,6 +31,55 @@ class BBoxValidator(object):
                 raise colander.Invalid(node, "MinY greater than MaxY")
 
 
+class RangeValidator(object):
+    """
+    Range validator which succeeds if the seperator is a dash, both numbers can be converted to ints and
+    the min < max and min > 0
+    """
+    def __call__(self, node, value):
+        try:
+            min, max = [int(val) for val in value.split('-',1)]
+        except Exception:
+            raise colander.Invalid(node, "Could not parse range. "
+                                         "Is the minimum less than 0? Are the values separated by a '-'?")
+        else:
+            if min < 0:
+                raise colander.Invalid(node, "Range minimum is less than 0")
+            if max < min:
+                raise colander.Invalid(node, "Min is greater than Max")
+            if max > 15000:
+                raise colander.Invalid(node, "Max is greater than allowed dispersion domains (15000m)")
+
+
+class LongitudeValidator(object):
+    """
+    Longitude validator to ensure any input values are between [-180,180]
+    """
+    def __call__(self, node, value):
+        try:
+            lon = float(value)
+        except Exception:
+            raise colander.Invalid(node, "Value entered is not a number")
+        else:
+            if lon < -180 or lon > 180:
+                raise colander.Invalid(node, "Longitude out of range [-180, 180].")
+
+
+class LatitudeValidator(object):
+    """
+    Latitude validator to ensure any input values are between [-90,90]
+    """
+    def __call__(self, node, value):
+        try:
+            lat = float(value)
+        except Exception:
+            raise colander.Invalid(node, "Value entered is not a number")
+        else:
+            if lat < -90 or lat > 90:
+                raise colander.Invalid(node, "Latitude out of range [-90, 90].")
+
+
+
 class URLValidator(object):
     """
     URL validator which can configured with allowed URL schemes.
@@ -68,7 +117,7 @@ class TextValidator(object):
                 raise colander.Invalid(node, "Invalid value ... empty.")
             for char in self.restricted_chars:
                 if char in normalized_value:
-                    raise colander.Invalid(node, "Invalid value ... containts restricted characters.")
+                    raise colander.Invalid(node, "Invalid value ... contains restricted characters.")
 
 
 class FileUploadValidator(colander.All):

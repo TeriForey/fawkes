@@ -13,9 +13,10 @@ from owslib.wps import WPSExecution
 from pyramid.security import authenticated_userid
 
 from phoenix.geoform.widget import BBoxWidget, ResourceWidget
-from phoenix.geoform.form import BBoxValidator
+from phoenix.geoform.form import BBoxValidator, LatitudeValidator, LongitudeValidator
 from phoenix.geoform.form import URLValidator
 from phoenix.geoform.form import TextValidator
+from phoenix.geoform.form import RangeValidator
 
 import logging
 LOGGER = logging.getLogger("PHOENIX")
@@ -171,6 +172,18 @@ class WPSSchema(deform.schema.CSRFSchema):
             else:
                 node.default = data_input.defaultValue
         self.colander_literal_widget(node, data_input)
+
+        ## Find ranges and use new validator
+        if node.name == "elevationOut":
+            LOGGER.debug("Looking at the elevationOut node")
+            LOGGER.debug("%s" % (node))
+            node.validator = RangeValidator()
+
+        # Use validators for longitude and latitude
+        if node.name == "latitude":
+            node.validator = LatitudeValidator()
+        if node.name == "longitude":
+            node.validator = LongitudeValidator()
 
         # sequence of nodes ...
         if data_input.maxOccurs > 1:
