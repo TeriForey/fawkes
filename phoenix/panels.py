@@ -18,6 +18,7 @@ def navbar(context, request):
 
     items = list()
     items.append(nav_item('Processes', request.route_path('processes')))
+    items.append(nav_item('NAME processes', request.route_path('namewps_list')))
     if request.has_permission('submit'):
         if request.wizard_activated:
             items.append(nav_item('Wizard', request.route_path('wizard')))

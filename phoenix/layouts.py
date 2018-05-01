@@ -12,7 +12,7 @@ class PageLayout(object):
 
     @property
     def project_title(self):
-        return 'Phoenix - A Pyramid WPS Application for Climate Science'
+        return 'Fawkes - A Phoenix-Pyramid WPS Application for Climate Science'
 
     def add_breadcrumb(self, route_path, title):
         self.breadcrumbs.append(dict(route_path=route_path, title=title))

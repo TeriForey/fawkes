@@ -5,11 +5,11 @@
     <section class="topbox">
       <div class="container">
         <h1>
-          <span class="title">Phoenix</span>
+          <span class="title">Fawkes</span>
         </h1>
         <h2>
-          A <strong>Python Pyramid</strong> Web Application<br>
-          to interact with <strong>Web Processing Services</strong>
+          A Phoenix <strong>Python Pyramid</strong> Web Application<br>
+          to run the Met Office Dispersion Model <strong>NAME</strong>
         </h2>
       </div>
     </section>
