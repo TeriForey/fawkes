@@ -68,6 +68,9 @@ def main(global_config, **settings):
     # processes
     config.include('phoenix.processes')
 
+    # NAME wps process
+    config.include('phoenix.namewps')
+
     # job monitor
     config.include('phoenix.monitor')
 
