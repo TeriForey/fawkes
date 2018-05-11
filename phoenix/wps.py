@@ -249,8 +249,8 @@ class WPSSchema(deform.schema.CSRFSchema):
             for value in data_input.allowedValues:
                 choices.append([value, value])
             node.widget = deform.widget.Select2Widget(values=choices)
-        elif type(node.typ) == colander.DateTime:
-            node.widget = deform.widget.DateTimeInputWidget()
+        # elif type(node.typ) == colander.DateTime:
+        #     node.widget = deform.widget.DateTimeInputWidget()
         elif type(node.typ) == colander.Boolean:
             node.widget = deform.widget.CheckboxWidget()
         elif 'password' in data_input.identifier:
