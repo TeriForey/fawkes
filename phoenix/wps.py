@@ -14,6 +14,8 @@ from pyramid.security import authenticated_userid
 
 from phoenix.geoform.widget import BBoxWidget, ResourceWidget
 from phoenix.geoform.form import BBoxValidator, LatitudeValidator, LongitudeValidator
+from phoenix.geoform.form import TupleFloatValidator, LonLatTupleValidator
+from phoenix.geoform.form import LongitudeBoundaryValidator, LatitudeBoundaryValidator
 from phoenix.geoform.form import URLValidator
 from phoenix.geoform.form import TextValidator
 from phoenix.geoform.form import RangeValidator
@@ -184,6 +186,14 @@ class WPSSchema(deform.schema.CSRFSchema):
             node.validator = LatitudeValidator()
         if node.name == "longitude":
             node.validator = LongitudeValidator()
+        if node.name == "lon_bounds":
+            node.validator = LongitudeBoundaryValidator()
+        if node.name == "lat_bounds":
+            node.validator = LatitudeBoundaryValidator()
+        if node.name == "scale":
+            node.validator = TupleFloatValidator()
+        if node.name == "station":
+            node.validator = LonLatTupleValidator()
 
         # sequence of nodes ...
         if data_input.maxOccurs > 1:

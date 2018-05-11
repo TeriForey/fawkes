@@ -38,7 +38,7 @@ class RangeValidator(object):
     """
     def __call__(self, node, value):
         try:
-            min, max = [int(val) for val in value.split('-',1)]
+            min, max = [int(val.strip()) for val in value.split('-',1)]
         except Exception:
             raise colander.Invalid(node, "Could not parse range. "
                                          "Is the minimum less than 0? Are the values separated by a '-'?")
@@ -77,7 +77,65 @@ class LatitudeValidator(object):
         else:
             if lat < -90 or lat > 90:
                 raise colander.Invalid(node, "Latitude out of range [-90, 90].")
+            
+            
+class LongitudeBoundaryValidator(object):
+    """
+    Longitude boundary validator to ensure input string is a tuple between [-180,180]
+    """
+    def __call__(self, node, value):
+        try:
+            minval, maxval = [float(val.strip()) for val in value.split(',', 1)]
+        except Exception:
+            raise colander.Invalid(node, "Longitude boundary should be separated with a comma (min,max)")
+        else:
+            if minval < -180 or maxval > 180:
+                raise colander.Invalid(node, "Longitude is out of range [-180, 180]")
+            if minval >= maxval:
+                raise colander.Invalid(node, "Minimum longitude is greater than maximum")
 
+
+class LatitudeBoundaryValidator(object):
+    """
+    Latitude boundary validator to ensure input string is a tuple between [-90,90]
+    """
+    def __call__(self, node, value):
+        try:
+            minval, maxval = [float(val.strip()) for val in value.split(',', 1)]
+        except Exception:
+            raise colander.Invalid(node, "Latitude boundary should be separated with a comma (min,max)")
+        else:
+            if minval < -90 or maxval > 90:
+                raise colander.Invalid(node, "Latitude is out of range [-90, 90]")
+            if minval >= maxval:
+                raise colander.Invalid(node, "Minimum latitude is greater than maximum")
+            
+
+class TupleFloatValidator(object):
+    """
+    Float tuple validator
+    """
+    def __call__(self, node, value):
+        try:
+            val1, val2 = [float(val.strip()) for val in value.split(',', 1)]
+        except Exception:
+            raise colander.Invalid(node, "Could not read comma-separated numbers")
+
+
+class LonLatTupleValidator(object):
+    """
+    Longitude, Latitude tuple validator
+    """
+    def __call__(self, node, value):
+        try:
+            lon, lat = [float(val.strip()) for val in value.split(',', 1)]
+        except Exception:
+            raise colander.Invalid(node, "Could not read comma-separated coordinates (Longitude,Latitude)")
+        else:
+            if lon < -180 or lon > 180:
+                raise colander.Invalid(node, "Longitude out of range [-180,180]")
+            if lat < -90 or lat > 90:
+                raise colander.Invalid(node, "Latitude out of range [-90,90]")
 
 
 class URLValidator(object):
