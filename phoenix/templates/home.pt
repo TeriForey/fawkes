@@ -15,29 +15,29 @@
     </section>
 
     <!-- highlighted processes -->
-    <section class="hilitbox" tal:condition="processes">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2><strong>Highlighted Processes</strong></h2>
-            <h3>Run one of these favorite processes or explore <a href="/processes">more</a>.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-3 col-md-2"  tal:repeat="process processes[:6]">
-            <a href="${process.url}" class="thumbnail text-center text-muted"
-               rel="tooltip"
-               data-toggle="tooltip"
-               title="${process.description}">
-              <icon class="fa fa-cog fa-5x"></icon>
-              <div class="caption">
-                <h4>${process.title}</h4>
-              </div><!-- thumbnail caption -->
-            </a><!-- thumbnail -->
-          </div>
-        </div><!-- row box -->
-      </div><!-- container pinned -->
-    </section>
+    <!--?<section class="hilitbox" tal:condition="processes">-->
+      <!--?<div class="container">-->
+        <!--?<div class="row">-->
+          <!--?<div class="col-md-12 text-center">-->
+            <!--?<h2><strong>Highlighted Processes</strong></h2>-->
+            <!--?<h3>Run one of these favorite processes or explore <a href="/processes">more</a>.</h3>-->
+          <!--?</div>-->
+        <!--?</div>-->
+        <!--?<div class="row">-->
+          <!--?<div class="col-xs-3 col-md-2"  tal:repeat="process processes[:6]">-->
+            <!--?<a href="${process.url}" class="thumbnail text-center text-muted"-->
+               <!--?rel="tooltip"-->
+               <!--?data-toggle="tooltip"-->
+               <!--?title="${process.description}">-->
+              <!--?<icon class="fa fa-cog fa-5x"></icon>-->
+              <!--?<div class="caption">-->
+                <!--?<h4>${process.title}</h4>-->
+              <!--?</div><!-- thumbnail caption -->
+            <!--?</a><!-- thumbnail -->
+          <!--?</div>-->
+        <!--?</div><!-- row box -->
+      <!--?</div><!-- container pinned -->
+    <!--?</section>-->
 
     <!-- info boxes -->
     <section class="infobox">
@@ -115,16 +115,14 @@
       <section class="logos-white">
           <div class = "container">
               <div class = "row">
-                  <div class="col-md-12">
-                      <div class="col-md-4 align-left">
-                        <span><img src="/static/phoenix/img/NCAS_logo.png" height="70px"></span>
-                      </div>
-                      <div class="col-md-4 align-center">
-                          <span><img src="/static/phoenix/img/CEDA_logo.png" height="70px"></span>
-                      </div>
-                      <div class="col-md-4 align-right">
-                          <span><img src="/static/phoenix/img/UoL_logo.png" height="70px"></span>
-                      </div>
+                  <div class="col-md-4 align-left">
+                    <span><img src="/static/phoenix/img/NCAS_logo.png" height="70px"></span>
+                  </div>
+                  <div class="col-md-4 align-center">
+                      <span><img src="/static/phoenix/img/CEDA_logo.png" height="70px"></span>
+                  </div>
+                  <div class="col-md-4 align-right">
+                      <span><img src="/static/phoenix/img/UoL_logo.png" height="70px"></span>
                   </div>
               </div>
           </div>
