@@ -8,8 +8,8 @@
           <span class="title">Fawkes</span>
         </h1>
         <h2>
-          A Phoenix <strong>Python Pyramid</strong> Web Application<br>
-          to run the Met Office Dispersion Model <strong>NAME</strong>
+          A <strong>Python Pyramid</strong> Web Application<br>
+          to run the Met Office Dispersion Model <br><strong>NAME</strong>
         </h2>
       </div>
     </section>
@@ -44,13 +44,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2><strong>Explore Phoenix</strong></h2>
-            <h3>Making it easy to run processes from a Web Processing Service and to visualize and share the results.</h3>
+            <h2><strong>Explore Fawkes</strong></h2>
+            <h3>Making it easy to run NAME and to visualize and share the results.</h3>
             <h3></h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <span class="fa-stack fa-3x" aria-hidden="true">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
@@ -58,24 +58,24 @@
             <h4>
               <b>Run your processes.</b>
             </h4>
-            <h5>Choose a process from a Web Processing Service and start it.</h5>
+            <h5>Choose a standard or advanced NAME process and run it.</h5>
             <!--
             <a class="btn btn-success" href="${request.route_url('processes')}" role="button" >
               <span aria-hidden="true">Run a process &raquo;</span>
             </a>
             -->
           </div>
-          <div class="col-md-3 text-center">
-            <span class="fa-stack fa-3x" aria-hidden="true">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-magic fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4>
-              <b>Use the Wizard to feed your processes with data.</b>
-            </h4>
-            <h5>Feed your processes with data from Earth System Grid Federation and Thredds Data Servers.</h5>
-          </div>
-          <div class="col-md-3 text-center">
+          <!--?<div class="col-md-3 text-center">-->
+            <!--?<span class="fa-stack fa-3x" aria-hidden="true">-->
+              <!--?<i class="fa fa-circle fa-stack-2x"></i>-->
+              <!--?<i class="fa fa-magic fa-stack-1x fa-inverse"></i>-->
+            <!--?</span>-->
+            <!--?<h4>-->
+              <!--?<b>Use the Wizard to feed your processes with data.</b>-->
+            <!--?</h4>-->
+            <!--?<h5>Feed your processes with data from Earth System Grid Federation and Thredds Data Servers.</h5>-->
+          <!--?</div>-->
+          <div class="col-md-4 text-center">
             <span class="fa-stack fa-3x" aria-hidden="true">
               <i class="fa fa-circle fa-stack-2x"></i>
               <i class="fa fa-tasks fa-stack-1x fa-inverse"></i>
@@ -85,19 +85,50 @@
             </h4>
             <h5>Monitor the status of your running jobs/processes.</h5>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <span class="fa-stack fa-3x" aria-hidden="true">
               <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
             </span>
             <h4>
-              <b>Show your results on a map.</b>
+              <b>Plot your results on a map.</b>
             </h4>
-            <h5>Use the map to visualize your processing results and input data.</h5>
+            <h5>Use the plotting processes to visualize your NAME results.</h5>
           </div>
         </div>
       </div>
     </section>
+
+      <section class="logos-grey">
+      <div class = "container">
+          <div class = "row">
+              <div class="col-md-5 col-md-offset-1">
+                  <span><img src="/static/phoenix/img/MO_logo_white.png" height="100px"></span>
+              </div>
+              <div class="col-md-6">
+                  <span><img src="/static/phoenix/img/NAME_banner_2.png" height="100px"></span>
+              </div>
+          </div>
+      </div>
+    </section>
+
+      <section class="logos-white">
+          <div class = "container">
+              <div class = "row">
+                  <div class="col-md-12">
+                      <div class="col-md-4 align-left">
+                        <span><img src="/static/phoenix/img/NCAS_logo.png" height="70px"></span>
+                      </div>
+                      <div class="col-md-4 align-center">
+                          <span><img src="/static/phoenix/img/CEDA_logo.png" height="70px"></span>
+                      </div>
+                      <div class="col-md-4 align-right">
+                          <span><img src="/static/phoenix/img/UoL_logo.png" height="70px"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
 
     <!-- birdhouse infos -->
     <section class="birdhouse">
@@ -112,7 +143,7 @@
               <br/>
               <a href="http://birdhouse.readthedocs.io/en/latest/contributing.html" target="_blank">Contributing</a>
               <br/>
-              <a href="http://birdhouse.readthedocs.io/en/latest/tutorial.html" target="_blank">Guides
+                <a href="http://birdhouse.readthedocs.io/en/latest/tutorial.html" target="_blank">Guides</a>
               <br/>
               <a href="http://birdhouse.readthedocs.io/en/latest/faq.html" target="_blank">FAQ</a>
               <br/>
@@ -147,6 +178,8 @@
         </div>
       </div>
     </section>
+
+
 
   </div>
 

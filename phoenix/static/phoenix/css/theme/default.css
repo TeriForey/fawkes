@@ -37,7 +37,7 @@ body {
   background-image: url('/static/phoenix/img/pyramid-green.png');
   background-repeat: no-repeat;
   background-position: 80% center;
-  background-size: 600px;
+  background-size: 800px;
   color: white;
   padding: 40px 0 60px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -50,13 +50,13 @@ body {
 /* Top Box
 ----------------------- */
 .topbox {
-    background-color: #8AB219;
-    background-image: url('/static/phoenix/img/pyramid-green.png');
+    background-color: #2e2e2e;
+    background-image: url('/static/phoenix/img/pyramid-MOgreen.png');
     background-repeat: no-repeat;
-    background-position: 80% center;
-    background-size: 600px;
+    background-position: right center;
+    background-size: 500px;
     color: white;
-    padding: 40px 0 60px;
+    padding: 20px 0 30px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     margin-top: -20px;
 }
@@ -64,6 +64,22 @@ body {
     color: orange
 }
 
+.topbox .title{
+    font-size: larger;
+    color : #afd734;
+}
+
+/* Logos
+---------------------- */
+
+.logos-grey {
+    background-color: #2e2e2e;
+}
+
+.logos-white {
+    background-color: white;
+    padding: 10px 5px 10px;
+}
 
 /* Info Box
 ----------------------- */
