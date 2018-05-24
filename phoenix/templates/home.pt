@@ -8,37 +8,12 @@
           <span class="title">Fawkes</span>
         </h1>
         <h2>
-          A <strong>Python Pyramid</strong> Web Application<br>
-          to run the Met Office Dispersion Model <br><strong>NAME</strong>
+          A <strong>Phoenix</strong> Web Application to run<br>
+          the Met Office Dispersion Model <strong>NAME</strong>
         </h2>
       </div>
     </section>
-
-    <!-- highlighted processes -->
-    <!--?<section class="hilitbox" tal:condition="processes">-->
-      <!--?<div class="container">-->
-        <!--?<div class="row">-->
-          <!--?<div class="col-md-12 text-center">-->
-            <!--?<h2><strong>Highlighted Processes</strong></h2>-->
-            <!--?<h3>Run one of these favorite processes or explore <a href="/processes">more</a>.</h3>-->
-          <!--?</div>-->
-        <!--?</div>-->
-        <!--?<div class="row">-->
-          <!--?<div class="col-xs-3 col-md-2"  tal:repeat="process processes[:6]">-->
-            <!--?<a href="${process.url}" class="thumbnail text-center text-muted"-->
-               <!--?rel="tooltip"-->
-               <!--?data-toggle="tooltip"-->
-               <!--?title="${process.description}">-->
-              <!--?<icon class="fa fa-cog fa-5x"></icon>-->
-              <!--?<div class="caption">-->
-                <!--?<h4>${process.title}</h4>-->
-              <!--?</div><!-- thumbnail caption -->
-            <!--?</a><!-- thumbnail -->
-          <!--?</div>-->
-        <!--?</div><!-- row box -->
-      <!--?</div><!-- container pinned -->
-    <!--?</section>-->
-
+      
     <!-- info boxes -->
     <section class="infobox">
       <div class="container">

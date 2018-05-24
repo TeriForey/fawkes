@@ -89,16 +89,6 @@ body {
     padding: 20px;
 }
 
-/* Highlight Box
------------------------ */
-.hilitbox {
-    text-align: center;
-    background: white;
-    padding: 20px;
-}
-.hilitbox a {
-    color: orange
-}
 
 /* Birdhouse Box
 ----------------------- */
