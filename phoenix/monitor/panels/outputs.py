@@ -37,6 +37,22 @@ class Outputs(object):
         job_id = self.request.matchdict.get('job_id')
         items = []
         for output in process_outputs(self.request, job_id).values():
-            items.append(output_details(self.request, output))
+            outdict = output_details(self.request, output)
+            LOGGER.debug("OUTDICT: %s" % outdict)
+            is_image = False
+            is_zip = False
+            type='lit'
+            if output.mimeType:
+                type='filetype'
+                if output.mimeType and 'zipped' in output.mimeType:
+                    is_zip = True
+                    type='zip'
+                elif output.mimeType and 'image' in output.mimeType:
+                    is_image = True
+                    type='imag'
+            outdict['is_zip'] = is_zip
+            outdict['is_image'] = is_image
+            outdict['symtype'] = type
+            items.append(outdict)
         items = sorted(items, key=lambda item: item['identifier'], reverse=1)
         return dict(items=items)

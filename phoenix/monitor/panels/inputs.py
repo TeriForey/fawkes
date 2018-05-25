@@ -69,6 +69,16 @@ class Inputs(object):
                 category = 'LiteralType'
                 data = inp.data
 
+            is_image = False
+            is_zip = False
+            if inp.mimeType and 'zipped' in inp.mimeType:
+                LOGGER.debug("Input %s is a Zip" % inp.title)
+                is_zip = True
+            elif inp.mimeType and 'image' in inp.mimeType:
+                LOGGER.debug("Input %s is an Image" % inp.title)
+                is_image = True
+            LOGGER.debug("Input is an Image: %s or a Zip: %s" % (is_image, is_zip))
+
             items.append(dict(title=inp.title,
                               abstract=inp.abstract,
                               identifier=inp.identifier,
@@ -77,7 +87,9 @@ class Inputs(object):
                               reference=escape_output(inp.reference),
                               proxy_reference=escape_output(proxy_reference),
                               wms_dataset_path=escape_output(wms_dataset_path),
-                              category=category))
+                              category=category,
+                              is_zip=is_zip,
+                              is_image=is_image))
 
         items = sorted(items, key=lambda item: item['identifier'], reverse=1)
         return dict(items=items)

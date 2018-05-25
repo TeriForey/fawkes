@@ -3,9 +3,18 @@
     <li class="list-group-item" tal:repeat="item items">
       <div class="media">
         <div class="media-left media-top">
-          <a href="#">
-            <img class="media-object" src="${request.static_path('phoenix:static/phoenix/img/missing_thumb.png')}" alt="No Preview"/>
-          </a>
+          <div tal:condition="item.symtype.endswith('zip') ">
+            <icon class="fa fa-lg fa-file-archive-o"></icon>
+          </div>
+          <div tal:condition="item.symtype.endswith('imag')">
+            <icon class="fa fa-lg fa-file-image-o"></icon>
+          </div>
+          <div tal:condition="item.symtype.endswith('lit')">
+            <icon class="fa fa-lg fa-pencil"></icon>
+          </div>
+          <div tal:condition="item.symtype.endswith('filetype')">
+            <icon class="fa fa-lg fa-file-o"></icon>
+          </div>
         </div>
         <div class="media-body">
           <div tal:condition="request.has_permission('submit')">
