@@ -74,6 +74,7 @@ body {
 
 .logos-grey {
     background-color: #2e2e2e;
+    border-bottom: #afd734 1px solid;
 }
 
 .logos-white {
@@ -81,11 +82,18 @@ body {
     padding: 10px 5px 10px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
 /* Info Box
 ----------------------- */
 .infobox {
     text-align: center;
-    background: #C5C997;
+    background: #c5c997;
     padding: 20px;
 }
 
@@ -93,11 +101,11 @@ body {
 /* Birdhouse Box
 ----------------------- */
 .birdhouse {
-    background: #183F7F;
+    background: #2e2e2e;
     color: white;
 }
 .birdhouse a {
-    color: orange
+    color: #c5c997;
 }
 
 /* Footer

@@ -74,83 +74,85 @@
       </div>
     </section>
 
-      <section class="logos-grey">
+    <section class="logos-grey">
       <div class = "container">
-          <div class = "row">
-              <div class="col-md-5 col-md-offset-1">
-                  <span><img src="/static/phoenix/img/MO_logo_white.png" height="100px"></span>
-              </div>
-              <div class="col-md-6">
-                  <span><img src="/static/phoenix/img/NAME_banner_2.png" height="100px"></span>
-              </div>
-          </div>
+        <div class = "row">
+          <!--?<div class="col-md-5 col-md-offset-1">-->
+            <!--?<span><img src="/static/phoenix/img/MO_logo_white.png" height="100px"></span>-->
+          <!--?</div>-->
+          <!--?<div class="col-md-12">-->
+            <img src="/static/phoenix/img/NAME_banner_trans.png" height="120px" class="center">
+          <!--?</div>-->
+        </div>
       </div>
     </section>
 
-      <section class="logos-white">
-          <div class = "container">
-              <div class = "row">
-                  <div class="col-md-4 align-left">
-                    <span><img src="/static/phoenix/img/NCAS_logo.png" height="70px"></span>
-                  </div>
-                  <div class="col-md-4 align-center">
-                      <span><img src="/static/phoenix/img/CEDA_logo.png" height="70px"></span>
-                  </div>
-                  <div class="col-md-4 align-right">
-                      <span><img src="/static/phoenix/img/UoL_logo.png" height="70px"></span>
-                  </div>
-              </div>
-          </div>
-      </section>
+      <!--?<section class="logos-white">-->
+          <!--?<div class = "container">-->
+              <!--?<div class = "row">-->
+                  <!--?<div class="col-md-4">-->
+                      <!--?<span><img src="/static/phoenix/img/MO_logo_black.png" height="70px"></span>-->
+                  <!--?</div>-->
+                  <!--?<div class="col-md-4 ">-->
+                      <!--?<span><img src="/static/phoenix/img/CEDA_logo.png" height="70px"></span>-->
+                  <!--?</div>-->
+                  <!--?<div class="col-md-4 ">-->
+                      <!--?<span><img src="/static/phoenix/img/UoL_logo.png" height="70px"></span>-->
+                  <!--?</div>-->
+              <!--?</div>-->
+          <!--?</div>-->
+      <!--?</section>-->
 
     <!-- birdhouse infos -->
     <section class="birdhouse">
       <div class="container">
         <div class="row">
-          <div class="col-md-2 col-md-offset-1">
-            <h4>Birdhouse</h4>
+          <div class="col-md-3 col-md-offset-1">
+            <h4>NAME WPS</h4>
             <p>
-              <a href="http://bird-house.github.io/" target="_blank">Project Home</a>
-              <br/>
-              <a href="http://birdhouse.readthedocs.io/en/latest/index.html" target="_blank">Documentation</a>
-              <br/>
-              <a href="http://birdhouse.readthedocs.io/en/latest/contributing.html" target="_blank">Contributing</a>
-              <br/>
-                <a href="http://birdhouse.readthedocs.io/en/latest/tutorial.html" target="_blank">Guides</a>
-              <br/>
-              <a href="http://birdhouse.readthedocs.io/en/latest/faq.html" target="_blank">FAQ</a>
-              <br/>
+              <a href="http://birdhouse.readthedocs.io/en/latest/index.html" target="_blank">Documentation</a><br/>
+              <a href="https://github.com/TeriForey/fawkes" target="_blank">Fawkes</a><br/>
+              <a href="https://github.com/TeriForey/testbird" target="_blank">NAMEwps</a><br/>
+              <a href="https://github.com/TeriForey/pyNAMEplot" target="_blank">pyNAMEplot</a><br/>
             </p>
           </div>
-          <div class="col-md-6">
-            <h4>Birdhouse Ecosystem</h4>
+          <div class="col-md-3 col-md-offset-1">
+            <h4>NAME-on-JASMIN</h4>
             <p>
-              <a href="http://pyramid-phoenix.readthedocs.io/en/latest/" target="_blank">Phoenix - web application to ease usage of WPS</a><br/>
-              <a href="http://birdy.readthedocs.io/en/latest/" target="_blank">Birdy - command line client for WPS</a><br/>
-              <a href="http://flyingpigeon.readthedocs.io/en/latest/" target="_blank">Flyingpigeon - WPS processes for climate model data, indices and extreme events</a><br/>
-              <a href="http://birdhouse-hummingbird.readthedocs.io/en/latest/" target="_blank">Hummingbird - WPS processes for quality checks of climate data</a><br/>
-              <a href="http://malleefowl.readthedocs.io/en/latest/" target="_blank">Malleefowl - WPS processes for climate data access</a><br/>
-              <a href="http://emu.readthedocs.io/en/latest/" target="_blank">Emu  - WPS with example processes</a><br/>
-              <a href="http://twitcher.readthedocs.io/en/latest/" target="_blank">Twitcher - Security Proxy for WPS and other OWS services</a><br/>
-              <a href="https://github.com/bird-house/bird-feeder" target="_blank">Bird Feeder - Publish Thredds catalogs metadata to Solr search index</a><br/>
+              <a href="https://www.metoffice.gov.uk/research/modelling-systems/dispersion-model" target="_blank">NAME homepage</a><br/>
+              <a href="http://www.jasmin.ac.uk/" target="_blank">JASMIN</a><br/>
+              <a href="https://code.metoffice.gov.uk/trac/name/" target="_blank">NAME collaboration service</a><br/>
+              <a href="https://code.metoffice.gov.uk/doc/name/" target="_blank">NAME documentation</a><br/>
             </p>
           </div>
-          <div class="col-md-3">
-            <h4>Related Projects</h4>
+          <div class="col-md-3 col-md-offset-1">
+            <h4>Affiliations</h4>
             <p>
-              <a href="http://geopython.github.io/" target="_blank">GeoPython</a><br/>
-              <a href="http://geonode.org/" target="_blank">GeoNode</a><br/>
-              <a href="http://esgf.llnl.gov/" target="_blank">Earth System Grid Federation (ESGF)</a><br/>
-              <a href="http://dev.climate4impact.eu/impactportal/general/index.jsp" target="_blank">Climate4Impact (KNMI)</a><br/>
-              <a href="http://wps-web1.ceda.ac.uk/ui/home" target="_blank">COWS (CEDA)</a><br/>
-              <a href="https://freva.met.fu-berlin.de/" target="_blank">FrEva (FU-Berlin)</a><br/>
-              <a href="https://dataguru.lu.se/" target="_blank">DataGURU (Lund University)</a><br/>
-              <a href="https://climate.apache.org/" target="_blank">Apache Climate Workbench</a><br/>
+              <a href="https://www.metoffice.gov.uk/" target="_blank">UK Met Office</a><br/>
+              <a href="http://www.ceda.ac.uk/" target="_blank">CEDA</a><br/>
+              <a href="https://uolreset.github.io/" target="_blank">University of Leicester ReSET</a><br/>
+              <a href="http://bird-house.github.io/" target="_blank">Birdhouse</a><br/>
             </p>
           </div>
         </div>
       </div>
     </section>
+
+      <section class="logos-white">
+        <div class = "container">
+          <div class = "row">
+            <div class="col-md-4">
+              <span><img src="/static/phoenix/img/MO_logo_black.png" height="80px"></span>
+            </div>
+            <div class="col-md-4 ">
+              <span><img src="/static/phoenix/img/CEDA_logo.png" height="70px"></span>
+            </div>
+            <div class="col-md-4 ">
+              <span><img src="/static/phoenix/img/UoL_logo.png" height="70px"></span>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
