@@ -122,7 +122,7 @@ class Account(object):
         user['openid'] = openid or ''
         user['name'] = name or 'Guest'
         self.collection.update({'login_id': login_id}, user)
-        self.session.flash("Hello <strong>{0}</strong>. Welcome to Phoenix.".format(escape(name)), queue='info')
+        self.session.flash("Hello <strong>{0}</strong>. Welcome to Fawkes.".format(escape(name)), queue='info')
         if user.get('group') == Guest:
             msg = """
             <strong>Warning:</strong> You are a member of the <strong>Guest</strong> group.

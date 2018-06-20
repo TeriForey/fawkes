@@ -17,15 +17,17 @@ def navbar(context, request):
         return dict(name=name, icon=icon, items=items)
 
     items = list()
-    items.append(nav_item('Processes', request.route_path('processes')))
-    items.append(nav_item('NAME processes', request.route_path('namewps_list')))
+    #items.append(nav_item('Processes', request.route_path('processes')))
+
     if request.has_permission('submit'):
-        if request.wizard_activated:
-            items.append(nav_item('Wizard', request.route_path('wizard')))
-    if request.has_permission('edit'):
+        items.append(nav_item('Processes', request.route_path('namewps_list')))
         items.append(nav_item('Monitor', request.route_path('monitor')))
-        if request.map_activated:
-            items.append(nav_item('Map', request.route_path('map')))
+        #if request.wizard_activated:
+        #   items.append(nav_item('Wizard', request.route_path('wizard')))
+    #if request.has_permission('edit'):
+        #items.append(nav_item('Monitor', request.route_path('monitor')))
+        #if request.map_activated:
+        #    items.append(nav_item('Map', request.route_path('map')))
 
     subitems = list()
     subitems.append(nav_item('Dashboard', request.route_path('dashboard', tab='overview'), icon='fa fa-dashboard'))
