@@ -29,7 +29,7 @@ needs_sphinx = '1.6'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'autoapi.extension',
+    #'autoapi.extension',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
@@ -57,9 +57,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Phoenix'
-copyright = u'2018, Birdhouse'
-author = u'Birdhouse'
+project = u'Fawkes'
+copyright = u'2018, Teri Forey'
+author = u'Teri Forey'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -235,7 +235,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'project.tex', u'Phoenix Documentation',
+  (master_doc, 'project.tex', u'Fawkes Documentation',
    u'Birdhouse', 'manual'),
 ]
 
@@ -265,7 +265,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'project', u'Phoenix Documentation',
+    (master_doc, 'project', u'Fawkes Documentation',
      [author], 1)
 ]
 
@@ -279,7 +279,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'project', u'Phoenix Documentation',
+  (master_doc, 'project', u'Fawkes Documentation',
    author, 'project', 'One line description of project.',
    'Miscellaneous'),
 ]
