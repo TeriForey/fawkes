@@ -3,7 +3,7 @@
 User Guide
 ==========
 
-The user guide explains how to use the Phoenix web application to interact with Web Processing Services.
+The user guide explains how to use the Fawkes web application to interact with Web Processing Services.
 
 .. contents::
     :local:
@@ -19,7 +19,7 @@ Press the ``Sign in`` button in the upper right corner.
 .. image:: _images/signin.png
   :scale: 50%
 
-The login page offers you several options to login to Phoenix.
+The login page offers you several options to login to Fawkes.
 
 .. image:: _images/login.png
   :scale: 50%
@@ -27,7 +27,7 @@ The login page offers you several options to login to Phoenix.
 You can login using your ESGF OpenID or your GitHub account.
 If you login for the first time your account needs to be activated by an administrator.
 
-If you are Phoenix admin you can also enter the admin password here.
+If you are Fawkes admin you can also enter the admin password here.
 
 **ESGF OpenID**
 
@@ -168,7 +168,7 @@ When you are logged-in as admin user you have the ``Settings`` page. Here you ca
 Register a WPS or Thredds service
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Open the ``Settings/Services`` page. Here you can see which services are registered in the catalog service (we are using :term:`birdhouse:PyCSW`). All theses services are known and useable by Phoenix.
+Open the ``Settings/Services`` page. Here you can see which services are registered in the catalog service (we are using :term:`birdhouse:PyCSW`). All theses services are known and useable by Fawkes.
 
 .. image:: _images/settings_services.png
 
@@ -194,12 +194,12 @@ To add a new Thredds service press the ``Register a new Service`` button again, 
 Activate Users
 ~~~~~~~~~~~~~~
 
-Open the ``Settings/Users`` page. Here you activate/deactivate users and also remove them. When a user has registerd to the Phoenix web application the user needs to be activated before the user can login.
+Open the ``Settings/Users`` page. Here you activate/deactivate users and also remove them. When a user has registerd to the Fawkes web application the user needs to be activated before the user can login.
 
 Choose Authentication Protocol
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Open the ``Settings/Auth`` page. Here you can choose the different authentication protocols (OpenID, LDAP, ...) which users can use on the login page. ``Local Auth`` enables the local admin account whose password is set in ``custom.cfg`` in your Phoenix installation.
+Open the ``Settings/Auth`` page. Here you can choose the different authentication protocols (OpenID, LDAP, ...) which users can use on the login page. ``Local Auth`` enables the local admin account whose password is set in ``custom.cfg`` in your Fawkes installation.
 
 .. image:: _images/settings_auth.png
 
@@ -207,7 +207,7 @@ Open the ``Settings/Auth`` page. Here you can choose the different authenticatio
 GitHub Support
 ~~~~~~~~~~~~~~
 
-You can use GitHub accounts to login to Phoenix. GitHub uses OAuth2. First you need to register your Phoenix application at `GitHub <https://github.com/settings/applications/new>`_. Then go to ``Settings/GitHub`` in your Phoenix application and enter the ``GitHub Consumer Key/Client ID`` and ``GitHub Consumer Secret/Client Secret``:
+You can use GitHub accounts to login to Fawkes. GitHub uses OAuth2. First you need to register your Fawkes application at `GitHub <https://github.com/settings/applications/new>`_. Then go to ``Settings/GitHub`` in your Fawkes application and enter the ``GitHub Consumer Key/Client ID`` and ``GitHub Consumer Secret/Client Secret``:
 
 .. image:: _images/settings_github.png
 
@@ -215,7 +215,7 @@ You can use GitHub accounts to login to Phoenix. GitHub uses OAuth2. First you n
 LDAP Support
 ~~~~~~~~~~~~
 
-Basic support for authentication via LDAP has been added recently. To enable LDAP login for your environment, login with your admin account, navigate to ``Settings/LDAP`` and configure Phoenix to match your LDAP environment.
+Basic support for authentication via LDAP has been added recently. To enable LDAP login for your environment, login with your admin account, navigate to ``Settings/LDAP`` and configure Fawkes to match your LDAP environment.
 
 .. image:: _images/settings_ldap.png
 
@@ -224,7 +224,7 @@ There is no support for LDAP authorization yet. Use the ``Settings/Users`` backe
 Solr
 ~~~~
 
-You can publish the datasets of a registered Thredds service to a Solr index server. The Solr server is setup with the Phoenix installation.
+You can publish the datasets of a registered Thredds service to a Solr index server. The Solr server is setup with the Fawkes installation.
 
 .. image:: _images/solr_index.png
 

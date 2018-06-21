@@ -3,11 +3,11 @@
 Configuration
 =============
 
-You can configure Phoenix by editing ``custom.cfg`` in the Phoenix source folder:
+You can configure Fawkes by editing ``custom.cfg`` in the Fawkes source folder:
 
 .. code-block:: sh
 
-   $ cd pyramid-phoenix
+   $ cd fawkes
    $ vim custom.cfg
    $ cat custom.cfg
 
@@ -51,7 +51,7 @@ To activate the GitHub login for external users you need to configure a GitHub a
    github-consumer-key = ########################
    github-consumer-secret = ############################
 
-See the `GitHub Settings <https://github.com/settings/applications/new>`_ on how to generate the application key for Phoenix.
+See the `GitHub Settings <https://github.com/settings/applications/new>`_ on how to generate the application key for Fawkes.
 
 If you want to use a different Malleefowl WPS service then change the ``wps-url`` value:
 

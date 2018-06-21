@@ -8,17 +8,17 @@ Troubleshooting
    :depth: 2
    :backlinks: none
 
-Phoenix does not start
+Fawkes does not start
 ----------------------
 
-Phoenix needs a running mongodb and pycsw service. Sometimes Phoenix is started when these service are not ready yet. In that case start theses services manually in the order mongodb, pycsw and Phoenix with:
+Fawkes needs a running mongodb and pycsw service. Sometimes Fawkes is started when these service are not ready yet. In that case start theses services manually in the order mongodb, pycsw and Fawkes with:
 
 .. code-block:: sh
 
-    $ source activate pyramid-phoenix     # activate conda environment used by phoenix
+    $ source activate fawkes     # activate conda environment used by fawkes
     $ supervisorctl restart mongodb
     $ supervisorctl restart pycsw
-    $ supervisorctl restart phoenix
+    $ supervisorctl restart fawkes
 
 You can also try to restart all services with:
 

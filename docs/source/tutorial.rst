@@ -3,7 +3,7 @@
 Tutorial
 ========
 
-In the following tutorial will guide you though the first steps to get familliar with Phoenix.
+In the following tutorial will guide you though the first steps to get familiar with Fawkes.
 
 .. toctree::
    :maxdepth: 1
