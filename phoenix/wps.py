@@ -192,8 +192,6 @@ class WPSSchema(deform.schema.CSRFSchema):
             node.validator = LatitudeBoundaryValidator()
         if node.name == "scale":
             node.validator = TupleFloatValidator()
-        if node.name == "station":
-            node.validator = LonLatTupleValidator()
 
         # sequence of nodes ...
         if data_input.maxOccurs > 1:
