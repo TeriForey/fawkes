@@ -29,7 +29,7 @@ needs_sphinx = '1.6'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    #'autoapi.extension',
+    'autoapi.extension',
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
