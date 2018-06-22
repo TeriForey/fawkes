@@ -37,6 +37,8 @@ dependencies:
   - esgf-pyclient=0.1.8
   - myproxyclient=1.4.4
   - genshi=0.7
+# password
+  - ipython
 # celery
   - celery=3.1
   - kombu=3.0
