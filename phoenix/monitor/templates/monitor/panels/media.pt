@@ -48,12 +48,6 @@
               </span>
             </div>
           </p>
-          <p tal:condition="item.mime_type and item.reference">
-            <a href="${item.reference}" target="_" class="label label-warning"
-               data-toggle="tooltip" title="${item.reference}" data-value="value">
-              ${item.mime_type}
-            </a>
-          </p>
           <p tal:condition="item.reference">
             <a href="${item.proxy_reference}" target="_" data-toggle="tooltip"
                title="Download file" data-value="value" class="btn btn-link">
