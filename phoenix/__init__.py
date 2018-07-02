@@ -102,7 +102,7 @@ def main(global_config, **settings):
     config.include('phoenix.cart')
 
     # readthedocs
-    config.add_route('readthedocs', 'https://pyramid-phoenix.readthedocs.org/en/latest/{part}.html')
+    config.add_route('readthedocs', 'https://fawkes.readthedocs.org/en/latest/{part}.html')
 
     # max file size for upload in MB
     def max_file_size(request):

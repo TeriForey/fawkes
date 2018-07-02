@@ -1,4 +1,4 @@
-name: pyramid-phoenix
+name: fawkes
 channels:
   - birdhouse
   - defaults

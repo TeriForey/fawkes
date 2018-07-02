@@ -26,7 +26,7 @@ You can configure Fawkes by editing ``custom.cfg`` in the Fawkes source folder:
    github-consumer-key = ########################
    github-consumer-secret = ############################
 
-By default Phoenix runs on localhost. The HTTP port 8081 is redirected to the HTTPS port 8443.
+By default Fawkes runs on localhost. The HTTP port 8081 is redirected to the HTTPS port 8443.
 If you want to use a different hostname/port then edit the default values in ``custom.cfg``:
 
 .. code-block:: ini
@@ -42,7 +42,7 @@ To be able to login with the ``phoenix`` admin user you need to create a passwor
 
    $ make passwd
 
-To activate the GitHub login for external users you need to configure a GitHub application key for your Phoenix web application:
+To activate the GitHub login for external users you need to configure a GitHub application key for your Fawkes web application:
 
 .. code-block:: ini
 
