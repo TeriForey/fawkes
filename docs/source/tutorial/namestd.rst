@@ -26,8 +26,19 @@ Click on *Run NAME-on-JASMIN - Standard* and you will get a form to enter the pr
 
 .. image:: ../_images/tutorial/fawkes_runnamestd.png
 
-Select the release station and running options then click ``submit``.
+Select the release station and running options then click ``submit``. All options are explained below:
 
+===================================  =========  ==========  ========
+Option                               Box Type   Default     Detail
+===================================  =========  ==========  ========
+Release station                      Selection  Cape Verde  Site of release
+Run backwards                        Tick-box   False       Whether to run NAME forwards or backwards in time
+Run time                             Selection  1           Number of days to run NAME across (choice of 1, 5, 10 and 12)
+Output elevation averaging range(s)  Text       0-100       Output elevation ranges to use (must be separated by a '-')
+Resolution                           Selection  0.25        Degrees of resolution (choice of 0.25 or 0.05)
+Start date                           Text       -           Start date that NAME will run on
+End date                             Text       -           End date that NAME will run to (inclusive)
+===================================  =========  ==========  ========
 
 Monitor running Job
 -------------------
