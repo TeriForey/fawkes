@@ -53,7 +53,7 @@ Note, the maximum permitted value is 20 days.
 .. image:: ../_images/tutorial/namerun_time.png
 
 Select the computational domain NAME will calculate the dispersion within. Enter the minimum
-and maximum longitude (x) and latitude (y) values.
+and maximum longitude (X) and latitude (Y) values.
 
 .. image:: ../_images/tutorial/namerun_domain.png
 

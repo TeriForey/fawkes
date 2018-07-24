@@ -33,7 +33,7 @@
             <h4>
               <b>Run your processes.</b>
             </h4>
-            <h5>Choose a standard or advanced NAME process and run it.</h5>
+            <h5>Enter your input values to a NAME process and run the model on JASMIN.</h5>
             <!--
             <a class="btn btn-success" href="${request.route_url('processes')}" role="button" >
               <span aria-hidden="true">Run a process &raquo;</span>
