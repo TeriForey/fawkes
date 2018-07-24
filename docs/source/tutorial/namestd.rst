@@ -19,13 +19,13 @@ Go to the ``Processes`` tab.
 
 .. image:: ../_images/tutorial/Processes.png
 
+Click on *Run NAME-on-JASMIN - Standard Location* and you will get a form to enter the process parameters.
+
+.. image:: ../_images/tutorial/Stdrun.png
+
 
 Enter Process Parameters
 ------------------------
-
-Click on *Run NAME-on-JASMIN - Standard Location* and you will get a form to enter the process parameters:
-
-.. image:: ../_images/tutorial/Stdrun.png
 
 First choose the release location from the dropdown list of options. This defines the latitude, longitude and elevation
 of the particle release, as well as the computational domain.

@@ -11,6 +11,7 @@ In the following tutorial will guide you though the first steps to get familiar 
    tutorial/helloworld
    tutorial/namerun
    tutorial/namestd
+   tutorial/plotconc
    tutorial/cdosinfo
    tutorial/cdoensemble
    tutorial/cdoopendap
