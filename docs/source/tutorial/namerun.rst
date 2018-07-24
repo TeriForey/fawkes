@@ -1,9 +1,9 @@
-.. _tutorial_namestd:
+.. _tutorial_namerun:
 
-Run NAME - Standard release location
+Run NAME
 ==========================
 
-Follow this tutorial to run NAME every 3 hours from a set list of standard release sites.
+Follow this tutorial to run NAME using all available user-defined options.
 First you need to login. Please follow the login instructions in the :ref:`user guide <login>`.
 
 .. contents::
@@ -23,7 +23,7 @@ Go to the ``Processes`` tab.
 Enter Process Parameters
 ------------------------
 
-Click on *Run NAME-on-JASMIN - Standard Location* and you will get a form to enter the process parameters:
+Click on *Run NAME-on-JASMIN* and you will get a form to enter the process parameters:
 
 .. image:: ../_images/tutorial/Stdrun.png
 
