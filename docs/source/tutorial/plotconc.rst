@@ -92,21 +92,28 @@ Monitor running Job
 
 The job is now submitted and can be monitored on the *Monitor* page:
 
-.. image:: ../_images/tutorial/Monitor.png
+.. image:: ../_images/tutorial/plot_monitor.png
 
-Click on the green refresh icon to check the status of the job.
+Click on the green refresh icon to check the status of the job. You can also click on `Details` to see a running job log.
+
+.. image:: ../_images/tutorial/plot_joblog.png
 
 Display the outputs
 -------------------
 
-Click on the details link to see a running log of the job process.
+From the `Details` page, click on the *Outputs* tab to show the run outputs. In this case we have generated multiple graphs
+so the results are contained within a zipped folder.
 
-.. image:: ../_images/tutorial/fawkes_std_log.png
+.. image:: ../_images/tutorial/plot_outputs.png
 
-Click on the *Outputs* tab to show the run outputs - a job ID, zipped folder and an example plot.
+This folder can be downloaded and unzipped to view the plot files.
 
-.. image:: ../_images/tutorial/fawkes_std_outputs.png
+.. image:: ../_images/tutorial/plot_zipfile.png
 
+Each file is a PNG plot of the data, modified according to your input options. In this tutorial we created a plot per time-point (summarise='NA')
+and marked the release location.
+
+.. image:: ../_images/tutorial/plot_plot.png
 
 
 
